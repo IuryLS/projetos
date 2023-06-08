@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body onload="one()">
+    <nav id="top-bar">
+        <img class="top" src="./assets/map-maker.png">
+        Logo
+
+        <input id="search" type="text" placeholder="Search">
+        <img onclick="dualclick()" onchange="hidden()" class="top" src="./assets/search.png">
+    </nav>
+
+    <header>
+        <div id="main">
+            <nav id="options">
+                <button id="flight" onclick="one()"><img src="./assets/plane.png" alt=""> Flight</button>
+                <button id="hotel" onclick="two()"><img src="./assets/bed.png" alt=""> Hotel</button>
+                <button id="rental" onclick="three()"><img src="./assets/car.png" alt=""> Rental</button>
+            </nav>
+
+            <div id="content-one" class="content">
+                <h1>Travel the world with us</h1>
+                <span></span>
+                <span>From</span>
+                <span id="to">To</span>
+                <input class="text" type="text" placeholder="Departing">
+                <input class="text" type="text" placeholder="Arriving At">
+                <input id="submit" type="submit" value="Search and find dates">
+            </div>
+
+            <div id="content-two" class="content">
+                <h1>Hotel</h1>
+                <span></span>
+                <span>From</span>
+                <span id="to">To</span>
+                <input class="text" type="text" placeholder="Departing">
+                <input class="text" type="text" placeholder="Arriving At">
+                <input id="submit" type="submit" value="Search and find dates">
+            </div>
+
+            <div id="content-three" class="content">
+                <h1>Rental</h1>
+                <span></span>
+                <span>From</span>
+                <span id="to">To</span>
+                <input class="text" type="text" placeholder="Departing">
+                <input class="text" type="text" placeholder="Arriving At">
+                <input id="submit" type="submit" value="Search and find dates">
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <section>
+            <h2>Good Offers Right Now</h2>
+            <p>Up to <b>50%</b> discount.</p>
+
+            <div id="promotions">
+                <figure id="cinque-container">
+                    <img class="cities" src="./assets/cinqueterre.jpg" alt="">
+                    <figcaption class="cities-fig">Cinque Terre</figcaption>
+                </figure>
+
+
+                <figure class="other-cities new">
+                    <img class="cities" src="./assets/newyork.jpg" alt="">
+                    <figcaption class="cities-fig">New York</figcaption>
+                </figure>
+
+                <figure class="other-cities san">
+                    <img class="cities" src="./assets/sanfran.jpg" alt="">
+                    <figcaption class="cities-fig">San Francisco</figcaption>
+                </figure>
+
+                <figure class="other-cities pisa">
+                    <img class="cities" src="./assets/pisa.jpg" alt="">
+                    <figcaption class="cities-fig">Pisa</figcaption>
+                </figure>
+
+                <figure class="other-cities paris">
+                    <img class="cities" src="./assets/paris.jpg" alt="">
+                    <figcaption class="cities-fig">Paris</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <br>
+        <div id="nature">
+            <h2 id="a1">Explore Nature</h2>
+            <p id="a2">Travel with us and see nature at its finest</p>
+            <section class="buy a3">
+                <img src="./assets/ocean.jpg" alt="">
+                <div class="landscape">
+                    <h2>West Coast, Norway</h2>
+                    <p class="value">Round from $79</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </section>
+
+            <section class="buy a4">
+                <img src="./assets/mountains.jpg" alt="">
+                <div class="landscape">
+                    <h2>Mountains, Austria</h2>
+                    <p class="value">One-way from $39</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </section>
+        </div>
+
+        <section id="email">
+            <h2>Get the best offers first!</h2>
+            <p>Join our Newsletter.</p>
+            <p id="name">E-mail</p>
+            <input id="input-email" type="text" placeholder="Your Email address">
+            <input id="sub" type="submit" value="Subscribe">
+        </section>
+
+        <footer>
+            <h2>Contact</h2>
+            <p>Let us book your nest trip!</p>
+            <ul>
+                <li id="li1">Chicago, US</li>
+                <li id="li2">Phone, +00 151515</li>
+                <li id="li3">Email: mail@mail.com</li>
+            </ul>
+
+            <form>
+                <input class="contact" type="text" placeholder="Name">
+                <input class="contact" type="email" placeholder="Email">
+                <input class="contact" type="text" placeholder="Message">
+                <input id="contact" type="submit" value="SEND MESSAGE">
+            </form>
+
+            <div id="social">
+                <p>Find Us On</p>
+                <img src="./assets/facebook.png" alt="">
+                <img src="./assets/instagram.png" alt="">
+                <img src="./assets/snapchat.png" alt="">
+                <img src="./assets/pinterest.png" alt="">
+                <img src="./assets/twitter.png" alt="">
+                <img src="./assets/linkedin.png" alt="">
+                <p>Powered by <a href="">w3css</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(14, 13, 13);
+    color: #17D4FE;
+    font-family: monospace;
+    font-size: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

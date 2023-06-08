@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(241, 240, 240);
+}
+
+#top-bar{
+    width: 100vw;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: #f44436;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto 2fr auto auto;
+    justify-content: space-between;
+    align-content: center;
+    grid-column-gap: 10px;
+    box-sizing: border-box;
+}
+
+.top{
+    height: 30px;
+}
+
+#search{
+    visibility: hidden;
+    text-align: center;
+    width: 100px;
+}
+
+header{
+    width: 100vw;
+    background-image: url(./assets/london.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 15% 0%;
+}
+
+#main{
+    background-color: white;
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+}
+
+#options{
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+nav > button{
+    background-color: black;
+    color: white;
+    border: hidden;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+button > img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.content{
+    padding: 30px 15px;
+    display: grid;
+    grid-template: auto auto auto auto / auto auto;
+    grid-column-gap: 15px;
+    box-sizing: border-box;
+    display: none;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.text{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+#submit{
+    padding: 10px;
+    width: 60%;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 60%;
+}
+
+#container{
+    margin: auto;
+    width: 75vw;
+}
+
+#promotions{
+    position: relative;
+    display: grid;
+    grid-template-areas:    "a1 a2 a3"
+                            "a1 a4 a5";
+
+    grid-template-columns: 49% 23.5% 23.5%;
+    justify-content: space-between;
+    grid-row-gap: 3.7%;
+}
+
+#cinque-container{
+    position: relative;
+    margin: 0%;
+    display: inline-block;
+    grid-area: a1;
+}
+
+.cities{
+    width: 100%;
+}
+
+.other-cities{
+    position: relative;
+    display: inline-block;
+    margin: 0%;
+}
+
+.cities-fig{
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 2vw;
+}
+
+.new{
+    grid-area: a2;
+
+}
+
+.san{
+    grid-area: a3;
+}
+
+.pisa{
+    grid-area: a4;
+}
+
+.paris{
+    grid-area: a5;
+}
+
+#nature{
+    display: grid;
+    grid-template-areas:    "a1 a1"
+                            "a2 a2"
+                            "a3 a4";
+    grid-template-columns: 49% 49%;
+    justify-content: space-between; 
+
+}
+
+.buy > img{
+    width: 100%;
+}
+
+.buy{
+    background-color: white;
+    display: inline-block;
+}
+
+.landscape{
+    font-size: 1.2vw;
+    padding: 4%;
+    padding-top: 0px;
+}
+
+.landscape > h2{
+    margin-top: 5px;
+}
+
+.value{
+    color: rgb(161, 158, 158);
+}
+
+.landscape > button{
+    font-size: 1.5vw;
+    background-color: white;
+    border: none;
+}
+
+.landscape > button:hover{
+    background-color: rgba(128, 128, 128, 0.247);
+}
+
+#a1{
+    grid-area: a1;
+}
+
+#a2{
+    grid-area: a2;
+}
+
+.a3{
+    grid-area: a3;
+}
+
+.a4{
+    grid-area: a4;
+}
+
+#email{
+    margin-top: 3%;
+    background-color: #6b6a6a;
+    padding: 20px 15px;
+    color: white;
+}
+
+#email > h2{
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#email > p{
+    font-size: 0.7em;
+}
+
+#name{
+    margin-bottom: 2px;
+}
+
+#input-email{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#sub{
+    margin-top: 10px;
+    background-color: #fc6b61;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 0.7em;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 10px;
+    padding-left: 25px;
+}
+
+#li1{
+    background-image: url(./assets/map-marker-alt-solid.svg);
+}
+
+#li2{
+    background-image: url(./assets/phone-alt-solid.svg);
+}
+
+#li3{
+    background-image: url(./assets/envelope-solid.svg);
+}
+
+.contact{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#contact{
+    background-color: black;
+    color: rgb(241, 240, 240);
+    padding: 15px 20px;
+    border: none;
+    font-size: 10px;
+}
+
+#social{
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#social > img{
+    width: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){ 
+    #container{
+        margin: auto;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 700px){ 
+    header{
+        width: 100vw;
+        background-image: none;
+        background-repeat: none;
+        background-position: none;
+        background-size: none;
+        position: relative;
+        padding: 0%;
+    }
+    
+    #main{
+        width: 100%;
+    }
+
+    .content{
+        padding: 30px 30px;
+        display: grid;
+        grid-template: auto / auto;
+        grid-column-gap: 15px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    #to{
+        grid-area: 5;
+    }
+}
+
+@media screen and (max-width: 450px){ 
+    #promotions{
+        height: 1680px;
+        position: relative;
+        display: grid;
+        grid-template-areas:    "a1" 
+                                "a2" 
+                                "a3"
+                                "a4" 
+                                "a5";
+
+        grid-template-columns: auto;
+        justify-content: stretch;
+        grid-row-gap: 10px;
+    }
+
+    .cities-fig{
+        font-size: 5vw;
+    }
+
+    #nature{
+        display: grid;
+        grid-template-areas:    "a1"
+                                "a2"
+                                "a3"
+                                "a4";
+        grid-template-columns: auto;
+        justify-content: stretch;
+    }
+
+    .a3{
+        margin-bottom: 13px;
+    }
+}
+
+@media screen and (max-width: 450px){ 
+    #promotions{
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-areas:    "a1" 
+                                "a2" 
+                                "a3"
+                                "a4" 
+                                "a5";
+
+        grid-template-columns: auto;
+        justify-content: stretch;
+        grid-row-gap: 10px;
+    }
+
+    .cities-fig{
+        font-size: 5vw;
+    }
+
+    #nature{
+        display: grid;
+        grid-template-areas:    "a1"
+                                "a2"
+                                "a3"
+                                "a4";
+        grid-template-columns: auto;
+        justify-content: stretch;
+    }
+
+    .a3{
+        margin-bottom: 13px;
+    }
+}
